@@ -25,7 +25,7 @@
                     <div class="col sm-col-12 md-col-8 small">
                         This site is structured as a PHP MVC application<br/>
                         CSS is written in Sass (SCSS) and compiled with <a href="http://gulpjs.com/" target="_blank">Gulp</a> and <a href="https://nodejs.org/" target="_blank">Node.js</a><br/>
-                        Source is up on Github if you're interested
+                        Source is up on <a href="https://github.com/zsaffrin/zachsaffrin.com" target="_blank">Github</a> if you're interested
                     </div>
                 </div>
                 <div class="py2 clear">
