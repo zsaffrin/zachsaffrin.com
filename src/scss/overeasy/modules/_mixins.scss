@@ -1,0 +1,17 @@
+
+// Calculate font size relative to base font size
+@mixin font-size($size) {
+    font-size: ($size * $base-font-size) + px;
+}
+
+
+// Calculate line height relative to base line height
+@mixin line-height($size) {
+    line-height: ($size * $base-line-height) + px;
+}
+
+
+// Set border-radius
+@mixin border-radius($factor) {
+    border-radius: $border-radius * $factor;
+}

@@ -1,0 +1,31 @@
+
+// Solid color background tools
+@each $color, $value in $colors {
+    .bg-#{$color} { background-color: $value !important }
+    .hf-bg-#{$color} { &:hover, &:focus { background-color: $value !important } } 
+}
+
+// Background position
+.bg-center  { background-position: center }
+.bg-top     { background-position: top }
+.bg-right   { background-position: right }
+.bg-bottom  { background-position: bottom }
+.bg-left    { background-position: left }
+
+// Background size
+.bg-cover   { background-size: cover }
+.bg-contain { background-size: contain }
+
+// Background repeat
+.bg-repeat-x  { background-repeat: repeat-x }
+.bg-repeat-y  { background-repeat: repeat-y }
+.bg-no-repeat { background-repeat: no-repeat }
+
+// Background attachment
+.bg-fixed { background-attachment: fixed }
+
+
+// Default page background
+:root {
+    background: $body-bg;
+}

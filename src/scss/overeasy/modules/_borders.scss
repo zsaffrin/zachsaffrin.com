@@ -1,0 +1,19 @@
+
+.border {
+    border-width: $border-width !important;
+    border-style: $border-style !important;
+}
+
+.rounded { @include border-radius(1) }
+.circle { border-radius: 100% }
+
+@each $color, $value in $colors {  
+    .border-#{$color} { 
+        @extend .border;
+        border-color: $value !important; 
+    }
+    .border-hover-#{$color} {
+        &:hover { border-color: $value !important }
+    }
+}
+

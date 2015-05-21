@@ -1,0 +1,53 @@
+
+input, select, 
+textarea, fieldset {
+    background: $input-bg;
+    border: $border-width $border-style darken($input-bg, 20%);
+    border-radius: $border-radius;
+    color: $input-color;
+    @include font-size($input-font-size);
+    @include line-height($input-font-size);
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: $input-padding;
+    transition: $transition-quick;
+    -webkit-display: none;
+
+    &:focus {
+        background: $input-focus-bg;
+        border-color: rgba($input-focus-glow, 0.5);
+        box-shadow: 0 0 2px 2px rgba($input-focus-glow, 0.5);
+        color: $input-focus-color;
+        outline: 0;
+    }
+}
+
+input[type=text], 
+input[type=datetime], 
+input[type=datetime-local], 
+input[type=email], 
+input[type=month], 
+input[type=number], 
+input[type=password], 
+input[type=search], 
+input[type=tel], 
+input[type=time], 
+input[type=url], 
+input[type=week] {
+    height: $input-height;
+    vertical-align: middle;
+    -webkit-appearance: none;
+}
+
+select {
+    @include line-height($input-height);
+}
+
+select:not([multiple]) {
+    height: $input-height;
+    vertical-align: middle;
+}
+
+textarea {
+    
+}

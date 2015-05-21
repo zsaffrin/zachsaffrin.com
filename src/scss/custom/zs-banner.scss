@@ -1,0 +1,33 @@
+#banner-icon {
+    svg { 
+        height: 2em;
+        width: 2.32258064516129em;
+
+        path { transition: fill 0.2s ease }
+    }
+
+    &:hover svg path {
+        fill: map-get($colors, strawberry);
+    }
+}
+a.nav-link {
+    border-bottom: 4px solid $body-bg;
+    color: map-get($colors, pestle);
+    cursor: pointer;
+    display: inline-block;
+    font-size: 75%;
+    margin-right: 5px;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    transition: color 0.2s ease, border-color 0.2s ease;
+
+    &.active {
+        border-color: map-get($colors, milkcap);
+        font-weight: $font-weight-bold;
+    }
+
+    &:hover {
+        border-color: map-get($colors, chive);
+        color: map-get($colors, apple);
+    }
+}

@@ -1,0 +1,20 @@
+
+// Auto-generate utilities for each color
+// Colors are defined in Variables module
+@each $color, $value in $colors {
+    // Text
+    .#{$color} { color: $value !important }
+
+    // SVG Stroke and Fill
+    .fill-#{$color} { fill: $value !important }
+    .stroke-#{$color} { stroke: $value !important }
+
+    // Hover/Focus Text
+    .hf-#{$color} { &:hover, &:focus { color: $value !important} }
+}
+
+
+// Default text color
+:root {
+    color: $body-text;
+}

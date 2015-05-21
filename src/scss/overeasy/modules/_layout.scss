@@ -1,0 +1,48 @@
+
+// Display modes
+.inline       { display: inline }
+.block        { display: block }
+.inline-block { display: inline-block }
+.display-none { display: none !important }
+.hide {
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+.over-hidden { overflow: hidden }
+.over-scroll { overflow: scroll }
+.over-auto   { overflow: auto }
+
+
+
+// clear
+.clear:before,
+.clear:after {
+    content: ' ';
+    display: table;
+}
+.clear:after { clear: both }
+
+
+// Alignment
+.fl { float: left }
+.fr { float: right }
+
+
+// Positions
+.relative { position: relative }
+.absolute { position: absolute }
+.fixed    { position: fixed }
+
+.top-0    { top: 0 }
+.right-0  { right: 0 }
+.bottom-0 { bottom: 0 }
+.left-0   { left: 0 }
+
+// Enable footer that sticks to bottom of page
+// To use this, use HTML5 tag <main> for the page content before your <footer>
+// Otherwise, for normal layout, everything can just go into <body>
+main { min-height: 100vh }

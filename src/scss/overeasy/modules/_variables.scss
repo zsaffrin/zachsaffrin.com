@@ -1,0 +1,131 @@
+
+// Number of Grid columns
+$grid-columns: 12;
+
+// Container sizes
+$container-width: 42em;
+
+
+// Breakpoints
+$breakpoint-sm: 40em;
+$breakpoint-md: 52em;
+$breakpoint-lg: 64em;
+
+
+// Spacing
+$space-1: 0.5rem;
+$space-2: 1rem;
+$space-3: 2rem;
+$space-4: 4rem;
+
+
+// Colors
+$colors: (
+    'grapefruit': #F03333,
+    'tomato': #DF1111,
+    'strawberry': #B02121,
+    'apple': #5A1111,
+    'banana': #FFBE1A,
+    'yolk': #E6A400,
+    'gouda': #FF8000,
+    'toast': #894706,
+    'chive': #28AF3E,
+    'pepper': #1E852F,
+    'krispie': #3F99D5,
+    'milkcap': #287FB8,
+    'blueberry': #576675,
+    'bluecorn': #344152,
+    'white': #FFFFFF,
+    'skim': #ECF0F1,
+    'toaster': #C9CFCF,
+    'blade': #B3BBBC,
+    'pestle': #7F8C8D,
+    'black': #111111
+);
+
+
+// Custom fonts (font-face)
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700,800);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,800);
+@import url(http://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+
+// Text and Font settings
+$base-font-size: 16;
+$base-line-height: 24;
+
+$body-font-size: 1.5;
+$body-font-family: 'Lato', sans-serif;
+$body-font-weight: 300;
+
+$font-weight-normal: 300; 
+$font-weight-bold: 400;
+$font-weight-bolder: 700;
+$font-weight-heavy: 800;
+
+$heading-font-family: 'Raleway', serif;
+$heading-font-weight: 700;
+$h1: 5.5;
+$h2: 3.5;
+$h3: 2;
+$h4: 1.5;
+$h5: 1.3125;
+$h6: 1.125;
+
+// Default colors
+$body-bg: map-get($colors, skim);
+$body-text: map-get($colors, bluecorn);
+$body-link: map-get($colors, strawberry);
+
+
+// Borders
+$border-width: 1px;
+$border-style: solid;
+$border-radius: 5px;
+
+
+// Buttons
+$button-border-radius: 1;
+$button-font-size: ($body-font-size * 0.7);
+$button-font-weight: $font-weight-bold;
+$button-margin: 4px 2px;
+$button-padding: 5px 15px;
+$button-color: map-get($colors, bluecorn);
+$button-text: $body-bg;
+$button-disabled-color: map-get($colors, blade);
+$button-disabled-text: map-get($colors, skim);
+
+
+// Code
+$code-font-family: 'Source Code Pro', 'Courier New', 'Courier', monospace;
+$code-font-size: 1;
+$code-font-weight: 400;
+$code-padding-x: $space-1;
+$code-padding-y: ($space-1 / 4);
+$code-bg: map-get($colors, toaster);
+$code-text: map-get($colors, black);
+$code-element: map-get($colors, strawberry);
+$code-attribute: map-get($colors, pepper);
+$code-value: map-get($colors, toast);
+$code-comment: map-get($colors, pestle);
+
+
+// Inputs and Forms
+$input-font-size: $body-font-size;
+$input-height: 2.15em;
+$input-padding: $space-1;
+$input-bg: $body-bg;
+$input-color: $body-text;
+$input-focus-bg: map-get($colors, white);
+$input-focus-color: $input-color;
+$input-focus-glow: map-get($colors, krispie);
+
+
+// Tables
+$table-cell-padding: $space-1;
+$table-th-weight: $font-weight-bold;
+$table-border-color: map-get($colors, toaster);
+
+
+// Transitions
+$transition-quick: all 0.15s ease;
