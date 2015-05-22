@@ -2,7 +2,7 @@
 <div class="container">
     
     <div class="h2 strong mb2">OverEasy</div>
-    <a href="http://overeasy.zachsaffrin.com" target="_blank" class="button-toast inverted">Project Page</a>
+    <a href="http://projects.zachsaffrin.com/overeasy" target="_blank" class="button-toast inverted">Project Page</a>
     <a href="https://github.com/zsaffrin/overeasy" target="_blank" class="button-black inverted">GitHub</a>
 
     <p class="my3">OverEasy is my very own web structure and style framework that I built from scratch.</p>
@@ -50,7 +50,7 @@
                 
                 <h3 class="caps">I&apos;m intrigued. Where do I find it?</h3>
                 <ul>
-                    <li><a href="http://overeasy.zachsaffrin.com" target="_blank" class="button-toast inverted">Project Page</a> for documentation and examples of usage</li>
+                    <li><a href="http://projects.zachsaffrin.com/overeasy" target="_blank" class="button-toast inverted">Project Page</a> for documentation and examples of usage</li>
                     <li><a href="https://github.com/zsaffrin/overeasy" target="_blank" class="button-black inverted">GitHub</a> to browse, clone, or fork the source code and use for your own project</li>
                 </ul>
 
