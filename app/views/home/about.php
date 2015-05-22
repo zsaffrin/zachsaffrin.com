@@ -3,7 +3,6 @@
     <h2 class="caps">About</h2>
 
     <div class="clear">
-        <div class="md-show col col-1">&nbsp;</div>
         <div class="sm-col-12 md-col-11 mx-auto">
             
             <div class="mt3">

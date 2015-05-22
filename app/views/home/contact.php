@@ -3,8 +3,7 @@
     
     <h2 class="caps">Contact</h2>
 
-    <div class="md-show col col-1">&nbsp;</div>
-    <div class="sm-col-12 md-col-11 mx-auto">
+    <div class="sm-col-12 md-col-11 mx-auto mb4">
         
         <div class="my3 center">
             <p>It is most flattering that your enthusiasm for my work continues unabated! Do you have questions about any of my work? 
