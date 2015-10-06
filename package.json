@@ -28,9 +28,6 @@
   "dependencies": {
     "angular": "^1.4.7",
     "angular-resource": "^1.4.7",
-    "angular-route": "^1.4.7",
-    "body-parser": "^1.14.1",
-    "express": "^4.13.3",
-    "method-override": "^2.3.5"
+    "angular-route": "^1.4.7"
   }
 }
