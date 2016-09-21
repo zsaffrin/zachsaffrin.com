@@ -16,7 +16,7 @@ app.get('*', function (req, res) {
 });
 
 
-var server = app.listen(process.env.port || 80, function() {
+var server = app.listen(8080, function() {
     var port = server.address().port;
     console.log('Zach is listening on port %s. Yes... always listening...', port);
 });
