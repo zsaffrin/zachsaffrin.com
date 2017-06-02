@@ -1,22 +1,39 @@
-var express        = require('express'),
-    bodyParser     = require('body-parser'),
-    methodOverride = require('method-override'),
-    path           = require('path'),
-    app            = express();
+const express = require('express');
+const bodyParser = require('body-parser');
+const httpProxy = require('http-proxy');
+const	path = require('path');
+const bundle = require('./server/bundler.js');
 
-app.use(methodOverride('X-HTTP-Method-Override'));
+const	app = express();
+const proxy = httpProxy.createProxyServer();
+
+const isProduction = process.env.NODE_ENV === 'production';
+const port = isProduction ? process.env.PORT : 3006;
+const	publicPath = path.join(__dirname, 'client');
 
 app.use(bodyParser.json());
-app.use(bodyParser.json({ type: 'application/vnd.api+json' }));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(publicPath));
 
-app.use(express.static(__dirname + '/'));
-app.get('*', function (req, res) {
-    res.sendFile(path.resolve('./index.html'));
+if (!isProduction) {
+	bundle();
+
+	app.all('/build/*', (req, res) => {
+		proxy.web(req, res, {
+			target: 'http://localhost:8080',
+		});
+	});
+}
+
+app.get('*', (req, res) => {
+	res.sendFile(`${publicPath}/index.html`);
 });
 
+proxy.on('error', (e) => {
+	console.error('Could not connect to proxy, please try again');
+	console.error(e);
+});
 
-var server = app.listen(8080, function() {
-    var port = server.address().port;
-    console.log('Zach is listening on port %s. Yes... always listening...', port);
+app.listen(port, () => {
+	console.info(`OverEasyCSS server listening on port ${port}`);
 });
