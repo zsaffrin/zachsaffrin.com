@@ -8,7 +8,7 @@ const	app = express();
 const proxy = httpProxy.createProxyServer();
 
 const isProduction = process.env.NODE_ENV === 'production';
-const port = isProduction ? process.env.PORT : 8080;
+const port = isProduction ? process.env.PORT : 80;
 const	publicPath = path.join(__dirname, 'client');
 
 app.use(bodyParser.json());
