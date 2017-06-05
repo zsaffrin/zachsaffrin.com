@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import ReactGA from 'react-ga';
 
 import Home from './Home';
 import About from './About';
@@ -8,8 +9,15 @@ require('overeasy/dist/overeasy.min.css');
 require('font-awesome/css/font-awesome.min.css');
 require('../styles/App.scss');
 
+ReactGA.initialize('UA-44385812-1');
+
+const logPageView = () => {
+	ReactGA.set({ page: window.location.pathname });
+	ReactGA.pageview(window.location.pathname);
+};
+
 const App = () => (
-	<Router>
+	<Router onUpdate={logPageView}>
 		<div id="app">
 			<div className="flex flex-just-between">
 				<Link to="/" className="p1 red-darker hover-red-light">
