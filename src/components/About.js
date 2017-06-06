@@ -33,9 +33,9 @@ const CreditList = () => (
 		</CreditEntry>
 
 		<CreditEntry title="Architecture">
-			This site is a React app with style written in SCSS running \
-			on Express server compiled with Webpack. If you&apos;re interested, \
-			I invite you to explore the source code on&nbsp;
+			This site is a React app with style written in SCSS running on Express
+			server compiled with Webpack. If you&apos;re interested, I invite you to
+			explore the source code on&nbsp;
 			<a
 				href="https://github.com/zsaffrin/zachsaffrin.com"
 				target="_blank"
@@ -146,13 +146,11 @@ const About = () => {
 					<p>
 						My name is&nbsp;
 						<span className="strong red-darker">Zach Saffrin</span>
-						&nbsp;and I simply enjoy working with web technology. \
-						I&apos;m an independent developer and designer and I \
-						mostly just do this because I enjoy it. I like \
-						exploring the balance of art and function in a \
-						meaningful user experience and I appreciate the \
-						challenge of learning new things. I build because \
-						I can.
+						&nbsp;and I simply enjoy working with web technology. I&apos;m an
+						independent developer and designer and I mostly just do this
+						because I enjoy it. I like exploring the balance of art and
+						function in a meaningful user experience and I appreciate the
+						challenge of learning new things. I build because I can.
 					</p>
 
 					<div className="my2 flex flex-wrap">
