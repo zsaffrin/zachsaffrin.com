@@ -35,5 +35,5 @@ proxy.on('error', (e) => {
 });
 
 app.listen(port, () => {
-	console.info(`OverEasyCSS server listening on port ${port}`);
+	console.info(`ZachSaffrin server listening on port ${port}`);
 });
