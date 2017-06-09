@@ -185,6 +185,16 @@ const About = () => {
 							<div className="fa fw fa-github mr1" />
 							zsaffrin
 						</a>
+						<a
+							href="https://www.linkedin.com/in/zsaffrin/"
+							target="_blank"
+							rel="noreferrer noopener"
+							className="m1 px2 py1 rounded bg-blue-light hover-bg-blue-lighter white
+								size-sm"
+						>
+							<div className="fa fw fa-linkedin-square mr1" />
+							zsaffrin
+						</a>
 					</div>
 				</div>
 
