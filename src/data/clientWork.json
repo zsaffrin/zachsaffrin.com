@@ -1,12 +1,5 @@
 [
 	{
-		"key": 1,
-		"title": "HopDRN",
-		"desc": "Profile and references for the Hopkinton Disability Research Network",
-		"url": "http://hopdrn.com",
-		"imagePath": ""
-	},
-	{
 		"key": 2,
 		"title": "Annies Books",
 		"desc": "Web presence and location directory for Annies Book Stop group for new and used books",
@@ -19,5 +12,12 @@
 		"desc": "Website for the Rustic New England Furniture Company featuring the work of Derek Skapars",
 		"url": "http://rnefurniture.com",
 		"imagePath": "./RNEFurniture_400.jpg"
+	},
+	{
+		"key": 4,
+		"title": "Midnight Riders",
+		"desc": "Custom Wordpress theme",
+		"url": "http://midnightriders.com/",
+		"imagePath": "./MidnightRiders_400.jpg"
 	}
 ]
