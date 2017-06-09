@@ -42,6 +42,10 @@ const config = {
 				test: /\.svg$/,
 				use: 'file-loader?name=svg/[name].[ext]',
 			},
+			{
+				test: /\.(jpe?g|gif|png)$/,
+				use: 'file-loader?name=img/[name].[ext]',
+			},
 		],
 	},
 	plugins: [

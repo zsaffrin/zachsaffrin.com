@@ -1,0 +1,23 @@
+[
+	{
+		"key": 1,
+		"title": "HopDRN",
+		"desc": "Profile and references for the Hopkinton Disability Research Network",
+		"url": "http://hopdrn.com",
+		"imagePath": ""
+	},
+	{
+		"key": 2,
+		"title": "Annies Books",
+		"desc": "Web presence and location directory for Annies Book Stop group for new and used books",
+		"url": "http://anniesbooks.com",
+		"imagePath": "./AnniesBooks_400.jpg"
+	},
+	{
+		"key": 3,
+		"title": "RNE Furniture",
+		"desc": "Website for the Rustic New England Furniture Company featuring the work of Derek Skapars",
+		"url": "http://rnefurniture.com",
+		"imagePath": "./RNEFurniture_400.jpg"
+	}
+]
