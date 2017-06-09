@@ -103,6 +103,28 @@ const Home = () => (
 			<div className="p2">
 				<h2 className="caps">Projects</h2>
 				<ItemList items={projects} />
+				<div className="">
+					<a
+						href="https://github.com/zsaffrin"
+						target="_blank"
+						rel="noreferrer noopener"
+						className="m1 px2 py1 rounded bg-gray-dark hover-bg-blue white
+							size-sm"
+					>
+						<div className="fa fw fa-github mr1" />
+						More on GitHub
+					</a>
+					<a
+						href="https://codepen.io/zachsaffrin/"
+						target="_blank"
+						rel="noreferrer noopener"
+						className="m1 px2 py1 rounded bg-gray-dark hover-bg-blue white
+							size-sm"
+					>
+						<div className="fa fw fa-codepen mr1" />
+						More on CodePen
+					</a>
+				</div>
 			</div>
 			<div className="p2">
 				<h2 className="caps">Client Work</h2>
