@@ -108,7 +108,7 @@ const Home = () => (
 			<div className="p2">
 				<h2 className="caps">Projects</h2>
 				<ItemList items={projects} thumbSize="4em" />
-				<div className="">
+				<div className="flex flex-wrap">
 					<a
 						href="https://github.com/zsaffrin"
 						target="_blank"
