@@ -6,7 +6,7 @@ import clientWork from '../data/clientWork.json';
 
 const pathToImages = require.context('../images/', true);
 
-const CreditListItem = (props) => {
+const ItemListItem = (props) => {
 	const { title, desc, url, imagePath } = props;
 
 	let creditListItemImage;
@@ -41,20 +41,20 @@ const CreditListItem = (props) => {
 		</a>
 	);
 };
-CreditListItem.propTypes = {
+ItemListItem.propTypes = {
 	title: PropTypes.string,
 	desc: PropTypes.string,
 	url: PropTypes.string,
 	imagePath: PropTypes.string,
 };
-CreditListItem.defaultProps = {
+ItemListItem.defaultProps = {
 	title: '',
 	desc: '',
 	url: '',
 	imagePath: '',
 };
 
-const CreditList = (props) => {
+const ItemList = (props) => {
 	const { items } = props;
 
 	return (
@@ -63,7 +63,7 @@ const CreditList = (props) => {
 				const { key, title, desc, url, imagePath } = item;
 
 				return (
-					<CreditListItem
+					<ItemListItem
 						title={title}
 						desc={desc}
 						url={url}
@@ -75,7 +75,7 @@ const CreditList = (props) => {
 		</div>
 	);
 };
-CreditList.propTypes = {
+ItemList.propTypes = {
 	items: PropTypes.arrayOf(
 		PropTypes.shape({
 			key: PropTypes.number,
@@ -86,7 +86,7 @@ CreditList.propTypes = {
 		}),
 	),
 };
-CreditList.defaultProps = {
+ItemList.defaultProps = {
 	items: [],
 };
 
@@ -102,11 +102,11 @@ const Home = () => (
 			</div>
 			<div className="p2">
 				<h2 className="caps">Projects</h2>
-				<CreditList items={projects} />
+				<ItemList items={projects} />
 			</div>
 			<div className="p2">
 				<h2 className="caps">Client Work</h2>
-				<CreditList items={clientWork} />
+				<ItemList items={clientWork} />
 			</div>
 		</div>
 	</div>
