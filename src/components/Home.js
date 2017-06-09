@@ -7,12 +7,12 @@ import clientWork from '../data/clientWork.json';
 const pathToImages = require.context('../images/', true);
 
 const ItemListItem = (props) => {
-	const { title, desc, url, imagePath } = props;
+	const { title, desc, url, imagePath, thumbSize } = props;
 
 	let creditListItemImage;
 	if (imagePath.length > 0) {
 		creditListItemImage = (
-			<div className="flex-none" style={{ width: '5em' }}>
+			<div className="flex-none" style={{ width: thumbSize }}>
 				<img
 					src={pathToImages(imagePath, true)}
 					alt={title}
@@ -46,16 +46,18 @@ ItemListItem.propTypes = {
 	desc: PropTypes.string,
 	url: PropTypes.string,
 	imagePath: PropTypes.string,
+	thumbSize: PropTypes.string,
 };
 ItemListItem.defaultProps = {
 	title: '',
 	desc: '',
 	url: '',
 	imagePath: '',
+	thumbSize: '5em',
 };
 
 const ItemList = (props) => {
-	const { items } = props;
+	const { items, thumbSize } = props;
 
 	return (
 		<div className="my2">
@@ -69,6 +71,7 @@ const ItemList = (props) => {
 						url={url}
 						key={key}
 						imagePath={imagePath}
+						thumbSize={thumbSize}
 					/>
 				);
 			})}
@@ -85,9 +88,11 @@ ItemList.propTypes = {
 			imagePath: PropTypes.string,
 		}),
 	),
+	thumbSize: PropTypes.string,
 };
 ItemList.defaultProps = {
 	items: [],
+	thumbSize: '5em',
 };
 
 const Home = () => (
@@ -102,7 +107,7 @@ const Home = () => (
 			</div>
 			<div className="p2">
 				<h2 className="caps">Projects</h2>
-				<ItemList items={projects} />
+				<ItemList items={projects} thumbSize="4em" />
 				<div className="">
 					<a
 						href="https://github.com/zsaffrin"
