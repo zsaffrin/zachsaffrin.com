@@ -156,7 +156,7 @@ const About = () => {
 					<div className="my2 flex flex-wrap">
 						<a
 							href={`mailto:${targetEmail.address}@${targetEmail.domain}`}
-							className="m1 px2 py1 rounded bg-red-dark hover-bg-red white size-sm"
+							className="m1 px2 py1 rounded bg-red-dark hover-bg-red white size-sm flex flex-center"
 						>
 							<div className="fa fw fa-envelope-o mr1" />
 							zach
@@ -194,6 +194,16 @@ const About = () => {
 						>
 							<div className="fa fw fa-linkedin-square mr1" />
 							zsaffrin
+						</a>
+						<a
+							href="https://codepen.io/zachsaffrin/"
+							target="_blank"
+							rel="noreferrer noopener"
+							className="m1 px2 py1 rounded bg-black hover-bg-gray-darker white
+								size-sm"
+						>
+							<div className="fa fw fa-codepen mr1" />
+							zachsaffrin
 						</a>
 					</div>
 				</div>
