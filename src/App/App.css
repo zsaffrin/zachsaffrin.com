@@ -1,6 +1,64 @@
 
 .App {
     font-family: 'Lato', 'Arial', Arial, sans-serif;
+
+    /* Color Palette
+       OvereasyCSS stock palette */
+    /* TODO: Trim this down to just used colors */
+    --red: #B02121;
+    --red-lighter: #d89090;
+    --red-light: #c04d4d;
+    --red-dark: #8d1a1a;
+    --red-darker: #581111;
+    --red-brighter: #e88282;
+    --red-bright: #dc4242;
+    --red-deep: #701515;
+    --red-deeper: #2f0909;
+    --orange: #FF8000;
+    --orange-lighter: #ffc080;
+    --orange-light: #ff9933;
+    --orange-dark: #cc6600;
+    --orange-darker: #804000;
+    --orange-brighter: #ffcc99;
+    --orange-bright: #ffa64d;
+    --orange-deep: #b35a00;
+    --orange-deeper: #663300;
+    --yellow: #FFBE1A;
+    --yellow-lighter: #ffdf8d;
+    --yellow-light: #ffcb48;
+    --yellow-dark: #cc9815;
+    --yellow-darker: #805f0d;
+    --yellow-brighter: #ffe9b3;
+    --yellow-bright: #ffd467;
+    --yellow-deep: #cd9200;
+    --yellow-deeper: #805c00;
+    --green: #1E852F;
+    --green-lighter: #8fc297;
+    --green-light: #4b9d59;
+    --green-dark: #186a26;
+    --green-darker: #0f4318;
+    --green-brighter: #61db75;
+    --green-bright: #2cc345;
+    --green-deep: #104719;
+    --green-deeper: #020803;
+    --blue: #344152;
+    --blue-lighter: #9aa0a9;
+    --blue-light: #5d6775;
+    --blue-dark: #2a3442;
+    --blue-darker: #1a2129;
+    --blue-brighter: #778ca8;
+    --blue-bright: #526681;
+    --blue-deep: #161c23;
+    --blue-deepr : black;
+    --gray: #B3BBBC;
+    --gray-lighter: #d9ddde;
+    --gray-light: #c2c9c9;
+    --gray-dark: #8f9696;
+    --gray-darker: #5a5e5e;
+    --gray-brighter : white;
+    --gray-bright: #dcdfe0;
+    --gray-deep: #8a9798;
+    --gray-deeper: #647072;
 }
 
 .App h1,
