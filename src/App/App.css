@@ -1,7 +1,5 @@
 
 .App {
-    font-family: 'Lato', 'Arial', Arial, sans-serif;
-
     /* Color Palette
        OvereasyCSS stock palette */
     /* TODO: Trim this down to just used colors */
@@ -49,7 +47,7 @@
     --blue-brighter: #778ca8;
     --blue-bright: #526681;
     --blue-deep: #161c23;
-    --blue-deepr : black;
+    --blue-deeper : black;
     --gray: #B3BBBC;
     --gray-lighter: #d9ddde;
     --gray-light: #c2c9c9;
@@ -59,6 +57,9 @@
     --gray-bright: #dcdfe0;
     --gray-deep: #8a9798;
     --gray-deeper: #647072;
+
+    color: var(--blue-dark);
+    font-family: 'Lato', 'Arial', Arial, sans-serif;
 }
 
 .App h1,
