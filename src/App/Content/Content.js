@@ -4,7 +4,7 @@ import './Content.css';
 import Home from './Home/Home';
 
 const Content = () => (
-    <Router>
+    <Router className="Content">
         <Home path="/" />
         <Redirect default noThrow from="*" to="/" />
     </Router>
