@@ -1,10 +1,17 @@
 import React from 'react';
+import './Home.css';
 
 const Home = () => (
     <div className="Home">
-        <h1>Hi, I&apos;m Zach</h1>
-        <p>This is version 7.0.0 of my website</p>
-        <p>And this is its Home page</p>
+        <div className="subtitle top">
+            <div className="content">Hi, I&apos;m</div>
+        </div>
+        <div className="title">
+            <h1>Zach</h1>
+        </div>
+        <div className="subtitle">
+            I like building stuff with code
+        </div>
     </div>
 );
 

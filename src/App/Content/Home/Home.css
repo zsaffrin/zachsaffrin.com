@@ -1,0 +1,29 @@
+
+.Home {
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    padding-left: var(--space5);
+}
+
+.Home .subtitle {
+    font-size: 1.25rem;
+    flex: 1 1 auto;
+}
+
+.Home .subtitle.top {
+    display: flex;
+}
+
+.Home .subtitle.top .content {
+    align-self: flex-end;
+}
+
+.Home .title {
+    text-transform: uppercase;
+}
+
+.Home .title h1 {
+    font-size: 5rem;
+    margin: 0;
+}
