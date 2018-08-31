@@ -1,0 +1,29 @@
+
+.ItemListLink {
+    border: 1px solid var(--gray);
+    border-radius: .25em;
+    display: block;
+    margin: var(--space2);
+    padding: var(--space3);
+    text-decoration: none;
+}
+
+.ItemListLink:hover {
+    border-color: var(--gray-darker);
+}
+
+.ItemListLink .title {
+    color: var(--red-dark);
+    font-family: 'Raleway';
+    font-size: calc(var(--base-font-size) * 1.17);
+    font-weight: 700;
+}
+
+.ItemListLink:hover .title {
+    color: var(--red);
+}
+
+.ItemListLink .subtitle {
+    color: var(--gray-darker);
+    font-size: .85em;
+}

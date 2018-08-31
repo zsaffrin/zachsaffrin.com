@@ -1,29 +1,32 @@
 
-.Home {
+.Home .hero {
     display: flex;
     flex-direction: column;
-    height: 50vh;
-    padding-left: var(--space5);
+    height: 10em;
 }
 
-.Home .subtitle {
+.Home .hero .subtitle {
     font-size: 1.25rem;
     flex: 1 1 auto;
 }
 
-.Home .subtitle.top {
+.Home .hero .subtitle.top {
     display: flex;
 }
 
-.Home .subtitle.top .content {
+.Home .hero .subtitle.top .content {
     align-self: flex-end;
 }
 
-.Home .title {
+.Home .hero .title {
+    font-family: 'Raleway';
+    font-size: 5rem;
+    font-weight: 700;
+    line-height: 1.15;
+    margin: 0;
     text-transform: uppercase;
 }
 
-.Home .title h1 {
-    font-size: 5rem;
-    margin: 0;
+.Home section {
+    padding: var(--space5);
 }
