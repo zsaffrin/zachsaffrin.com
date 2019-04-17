@@ -1,6 +1,6 @@
 {
   "name": "zachsaffrin.com",
-  "version": "6.0.2",
+  "version": "6.0.3",
   "description": "Personal profile site for Zach Saffrin",
   "scripts": {
     "build": "NODE_ENV=production webpack -p --config webpack.production.config.js",
